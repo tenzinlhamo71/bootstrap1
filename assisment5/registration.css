@@ -1,0 +1,9 @@
+.container{
+    margin-top: 55px;
+}
+h1,.div,.pagination{
+    text-align: center;
+}
+.jumbotron{
+    background-color:rgba(243, 229, 242, 0.933);
+}
