@@ -1,0 +1,16 @@
+body {
+    background-color: #e4b3ee;
+}
+img {
+    width: 300px;
+    height: 300px;
+    
+}
+.row{
+    background-color: #cbe6e7;
+    margin-top: 50px;
+}
+h1,h2{
+  text-align: center;
+  text-transform: uppercase;
+}

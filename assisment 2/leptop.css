@@ -1,0 +1,15 @@
+body {
+    background-color: #eeb3ce;
+}
+img {
+    width: 300px;
+    height: 300px;
+}
+.row{
+    background-color: #e7e7cb;
+    margin-top: 50px;
+}
+h1, h2{
+  text-align: center;
+  text-transform: uppercase;
+}
