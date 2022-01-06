@@ -1,0 +1,172 @@
+x<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment  02</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .form-check{
+               text-align: center;
+        }
+        body{
+            background-color:#b4e2e2;
+        }
+        .container{
+            background-color:rgba(101, 101, 119, 0.933);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-inverse bg-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">FY</a>
+        <a class="navbar-brand" href="#">
+          <img src="ac1.jpg" width="30" height="30" class="d-inline-block align-top" alt="" style="width:30px; height:30px">
+          MINI PROJECT </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+             <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Aout-Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html" target="_blank">Gallery</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Registration">Registration</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <br><br><br>
+      
+      <h1>Registration Form</h1>
+<br>
+<div class="container">
+    <div class="jumbotron">
+        <form>
+            <div class="form-row">
+              <div class="col">
+                <label for="name">First Name</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col">
+                <label for="name">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+          </form>
+
+          <div class="form-row"><!--email and password-->
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4"><!--form attribute is used to select any one from givrn dropdown list-->
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Select one</option>
+                <option>THIMPHU</option>
+                <option>PARO</option>
+                <option>PUNAKHA</option>
+                <option>WANGDI PHODANG</option>
+                <option>TRONGSA</option>
+                <option>BHUMTHANG</option>
+                <option>MONGAR</option>
+                <option>LHUNTSE</option>
+                <option>TASHIGANG</option>
+                <option>SAMDRUP JONGKHAR</option>
+                <option>PEMA GATSHEL</option>
+                <option>CHUKHA</option>
+                <option>SAMTSE</option>
+                <option>TSIRANG</option>
+                <option>DAGANA</option>
+                <option>SARPANG</option>
+                <option>ZHEMGANG</option>
+                <option>HAA</option>
+                <option>GASA</option>
+                <option>TASHI YANGTSE</option>
+
+              </select>
+            </div>
+          </div><br><br>
+
+          <div class="mb-3"><!--text box, which is leve for any feedback-->
+            <label for="validationTextarea">feedback</label>
+            <textarea class="form-control is-invalid" id="validationTextarea" placeholder="your message for any thing" required></textarea>
+            <div class="invalid-feedback">
+              Please leave your message here.
+            </div>
+          </div>
+
+          <div class="form-group"><!--check box, which is used to select one or more from give option-->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck"> Accept and register</label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+        <div style="text-align: center;"><!--lg for large and sm for small button-->
+        <button type="submit" class="btn btn-success btn-sm">Sign in</button> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <button type="submit" class="btn btn-success btn-sm">Sign up</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+  <ul class="pagination" style="margin-left: 400px;">
+      <li class="page-item"><a class="page-link" href="menu.html">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="home.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="gallery.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="menu.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>  
+
+
+    
+</body>
+</html>
